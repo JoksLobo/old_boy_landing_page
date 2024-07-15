@@ -1,6 +1,74 @@
-$corDeFundo: #40034c;
+@use 'variaveis';
+@use 'hero';
+@use 'plot';
+@use 'characters';
 
-body {
-    background-color: $corDeFundo;
-    color: #000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{ background-color: variaveis.$corDeFundo;}
+
+
+@mixin text($fontSize:16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize:40px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundaria;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$corTextoSecundaria;
+    text-decoration: underline;
+}
+.title--big {
+    @include title(44px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(28px);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundaria;
+    background-color: variaveis.$corDoBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDoBotaoPrimario;
+    &:hover{
+        background-color: lighten(variaveis.$corDoBotaoPrimario, 3%)
+    }
 }

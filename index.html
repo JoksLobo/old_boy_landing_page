@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Olá mundo</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                OldBoy
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#">Assista Agora</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./src/images/logo.png" alt="">
+            </h1>
+            <h1 class="title--big">OldBoy - A obra-prima do cinema Sul Coreano.</h1>
+        </div>
+    </section>
+    <section class="plot">
+        <div>
+            <h1 class="title--big">A trama</h1>
+        </div>
+        <div>
+            <p class="text--big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt atque aut ullam laudantium adipisci obcaecati voluptatem, fugiat aliquam cupiditate praesentium a aliquid in ad ipsam quidem. Quaerat soluta amet ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore dicta blanditiis, ipsa quis atque quas nostrum tempora ad eum at animi eos placeat deleniti ex. Maiores, officia commodi! Neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eaque maiores cumque at consectetur animi sapiente nobis distinctio! Deleniti iste unde maxime obcaecati, soluta quis facere aspernatur accusantium placeat eligendi!</p>
+        </div>
+    </section>
+    <section class="characters">
+        <h1 class="title--big">Os personagens</h1>
+        <nav class="characters__tabs">
+            <button data-tab-button="ohdaesu" class="characters__tabs__buttons characters__tabs__buttons--is-active">
+                Oh Dae-su
+            </button>
+            <button data-tab-button="yoojitae" class="characters__tabs__buttons">Yoo Ji-Tae</button>
+            <button data-tab-button="mido" class="characters__tabs__buttons">Mido</button>
+        </nav>
+        <ul data-tab-id="ohdaesu" class="characters__list characters__list--is-active">
+            <li class="characters__list__item">
+                <img src="./src/images/oh_dae_suh.jpeg" alt="personagem oh dae su">
+                <h3 class="title">Oh Dae Su</h3>
+                <div style="width: 300px;">
+                    <p style="word-wrap: break-word;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum dignissimos voluptates non fuga vitae neque qui velit, a repellat mollitia assumenda doloribus consectetur odio aperiam. Id eum ducimus quis!</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="yoojitae" class="characters__list">
+            <li class="characters__list__item">
+                <img src="./src/images/Yoo Ji-Tae Oldboy.PNG" alt="personagem yoo ji tae">
+                <h3 class="title">Yoo Ji-Tae</h3>
+                <div style="width: 300px;">
+                    <p style="word-wrap: break-word;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum dignissimos voluptates non fuga vitae neque qui velit, a repellat mollitia assumenda doloribus consectetur odio aperiam. Id eum ducimus quis!</p>
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="mido" class="characters__list">
+            <li class="characters__list__item">
+                <img src="./src/images/mido.jpeg" alt="personagem mido">
+                <h3 class="title">Mido</h3>
+                <div style="width: 300px;">
+                    <p style="word-wrap: break-word;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum dignissimos voluptates non fuga vitae neque qui velit, a repellat mollitia assumenda doloribus consectetur odio aperiam. Id eum ducimus quis!</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
